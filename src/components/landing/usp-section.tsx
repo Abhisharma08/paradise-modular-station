@@ -1,12 +1,37 @@
-import { Briefcase, LayoutGrid, Combine, Paintbrush, Truck } from 'lucide-react';
+import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const usps = [
-  { icon: Briefcase, title: 'Office Furniture', description: 'Desks, chairs, reception counters, meeting tables.' },
-  { icon: LayoutGrid, title: 'Modular Furniture', description: 'Adaptable layouts for evolving spaces.' },
-  { icon: Combine, title: 'Custom Manufacturing', description: 'Tailored designs to fit your vision.' },
-  { icon: Paintbrush, title: 'Interior Design', description: 'End-to-end space planning and execution.' },
-  { icon: Truck, title: 'Nationwide Delivery', description: 'Reliable delivery and installation across India.' },
+  {
+    image: 'https://placehold.co/100x100.png',
+    hint: 'office chair',
+    title: 'Office Furniture',
+    description: 'Desks, chairs, reception counters, meeting tables.',
+  },
+  {
+    image: 'https://placehold.co/100x100.png',
+    hint: 'modular sofa',
+    title: 'Modular Furniture',
+    description: 'Adaptable layouts for evolving spaces.',
+  },
+  {
+    image: 'https://placehold.co/100x100.png',
+    hint: 'manufacturing robot',
+    title: 'Custom Manufacturing',
+    description: 'Tailored designs to fit your vision.',
+  },
+  {
+    image: 'https://placehold.co/100x100.png',
+    hint: 'design blueprint',
+    title: 'Interior Design',
+    description: 'End-to-end space planning and execution.',
+  },
+  {
+    image: 'https://placehold.co/100x100.png',
+    hint: 'delivery truck',
+    title: 'Nationwide Delivery',
+    description: 'Reliable delivery and installation across India.',
+  },
 ];
 
 export default function UspSection() {
@@ -23,8 +48,15 @@ export default function UspSection() {
           {usps.map((usp, index) => (
             <Card key={index} className="text-center hover:shadow-2xl transition-shadow duration-300 border-t-4 border-primary/20 hover:border-primary bg-card p-4">
               <CardHeader>
-                <div className="mx-auto bg-primary/10 p-5 rounded-full w-fit mb-4">
-                    <usp.icon className="w-10 h-10 text-primary" />
+                <div className="mx-auto mb-4">
+                  <Image
+                    src={usp.image}
+                    alt={usp.title}
+                    width={80}
+                    height={80}
+                    className="rounded-full object-cover"
+                    data-ai-hint={usp.hint}
+                  />
                 </div>
                  <CardTitle className="text-xl font-semibold font-headline">{usp.title}</CardTitle>
               </CardHeader>
