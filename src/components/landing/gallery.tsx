@@ -7,25 +7,25 @@ const galleryItems = [
   {
     title: "Modular Workstations",
     description: "Smart, scalable workspaces from 2-person pods to 6-seat clusters. Optional magnetic partitions, glass screens, and planters blend style with function.",
-    image: "https://urbangreyfurniture.com/wp-content/uploads/2025/05/Untitled-design-4-600x600.png",
+    image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752738612/freepik__photorealistic-image-of-a-modern-modular-office-wo__60330_1_t1anho.jpg",
     hint: "modular workstation",
   },
   {
     title: "Premium Office Chairs",
     description: "Work in comfort and style. Executive and task chairs like APEX, EERON, and LUMI deliver support, durability, and sleek design.",
-    image: "https://urbangreyfurniture.com/wp-content/uploads/2025/05/ChatGPT-Image-Jun-22-2025-01_34_48-AM.png",
+    image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752738599/freepik__zoomedin-photorealistic-image-of-a-premium-ergonom__60332_1_ubxrsv.jpg",
     hint: "premium office chair",
   },
   {
     title: "Conference Room Furniture",
     description: "Furniture that inspires decisions. Stylish tables and seating for boardrooms, huddle spaces, and client meetings.",
-    image: "https://urbangreyfurniture.com/wp-content/uploads/2025/05/UGC008-1-1200x1371.jpg",
+    image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752738622/freepik__photorealistic-image-of-a-modern-conference-room-f__60333_1_wsn4xs.jpg",
     hint: "conference room",
   },
   {
     title: "Reception Area Furniture",
     description: "Create a standout first impression with modern reception desks and lounge seating for high-traffic spaces.",
-    image: "https://urbangreyfurniture.com/wp-content/uploads/2025/05/UGR003-1-1200x1371.jpg",
+    image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752738601/freepik__photorealistic-image-of-a-modern-office-reception-__60334_1_q7mxdj.jpg",
     hint: "reception area",
   },
 ];
