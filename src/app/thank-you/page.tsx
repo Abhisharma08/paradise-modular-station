@@ -54,7 +54,7 @@ function ThankYouContent() {
             </h1>
             <p className="mt-6 text-lg text-foreground/80 md:text-xl">
               Your quote request has been successfully submitted. Our team will
-              review your requirements and get back to you shortly.
+              review your requirements and get back to you shortly...
             </p>
             <div className="mt-10">
               <Button
