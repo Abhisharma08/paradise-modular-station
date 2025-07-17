@@ -6,7 +6,7 @@ export function Hero() {
     <section className="relative w-full overflow-hidden bg-background">
       <div className="absolute inset-0 bg-black/60 z-10" />
       <Image
-        src="https://urbangreyfurniture.com/wp-content/uploads/2025/06/Untitled-design-3-1.png"
+        src="https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752739364/Untitled-design-3-1_m6mvuo.webp"
         alt="Office furniture"
         fill
         className="object-cover"
