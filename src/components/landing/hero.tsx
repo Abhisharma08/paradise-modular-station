@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section id="get-a-quote" className="relative w-full overflow-hidden bg-background">
+    <section className="relative w-full overflow-hidden bg-background">
       <div className="absolute inset-0 bg-black/60 z-10" />
       <Image
         src="https://urbangreyfurniture.com/wp-content/uploads/2025/06/Untitled-design-3-1.png"

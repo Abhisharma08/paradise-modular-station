@@ -101,7 +101,7 @@ export function QuoteForm() {
   return (
     <Card className="w-full max-w-md mx-auto shadow-2xl bg-card/60 text-card-foreground backdrop-blur-sm">
       <CardHeader className="text-center">
-        <CardTitle className="text-2xl font-bold text-card-foreground">Request a Free Quote</CardTitle>
+        <CardTitle className="text-2xl font-bold text-card-foreground" id="get-a-quote">Request a Free Quote</CardTitle>
         <CardDescription className="text-card-foreground">
           {step === 1 ? "Step 1 of 2: Your Details" : "Step 2 of 2: Your Requirements"}
         </CardDescription>
