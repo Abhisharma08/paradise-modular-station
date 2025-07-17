@@ -1,16 +1,14 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  basePath: '/office-workstation-delhi', // 👈 Important: enables sub-path routing
-
+  basePath: '/office-workstation-delhi',
+  trailingSlash: true,
   typescript: {
     ignoreBuildErrors: true,
   },
-
   eslint: {
     ignoreDuringBuilds: true,
   },
-
   images: {
     remotePatterns: [
       {
