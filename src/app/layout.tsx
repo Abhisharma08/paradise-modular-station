@@ -1,12 +1,13 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
+import Script from 'next/script';
 
 
 export const metadata: Metadata = {
   title: 'Modern Office Furniture Solutions',
   description: 'Discover premium furniture for offices and commercial spaces with Urban Grey. From desks to seating, elevate your workspace today.',
-  keywords: 'workspace design, urban grey furniture, office solutions, commercial furniture, workspace solutions'
+  keywords: 'workspace design, urban grey furniture, office solutions, commercial furniture, workspace solutions',
 };
 
 export default function RootLayout({
@@ -22,7 +23,26 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
       </head>
-      <body className="font-body antialiased">{children}<Toaster /></body>
+      <body className="font-body antialiased">
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17188479495"
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-17188479495');
+            `,
+          }}
+        />
+        {children}
+        <Toaster />
+      </body>
     </html>
   );
 }

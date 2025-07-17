@@ -25,7 +25,7 @@ const HubspotContactInputSchema = z.object({
     "Conference Room Furniture", 
     "Reception Area Furniture"
     ]).optional().describe('The contact\'s furniture requirement.'),
-  quantity: z.enum(["3", "5-10", "11-15+"]).optional().describe('The required quantity.'),
+  quantity: z.enum(["3+", "5-10+", "11-15+"]).optional().describe('The required quantity.'),
 });
 export type HubspotContactInput = z.infer<typeof HubspotContactInputSchema>;
 

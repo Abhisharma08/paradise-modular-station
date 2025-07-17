@@ -31,7 +31,7 @@ const stepTwoSchema = z.object({
   ], {
     errorMap: () => ({ message: "Please select a requirement." }),
   }),
-  quantity: z.enum(["3", "5-10", "11-15+"], {
+  quantity: z.enum(["3+", "6+", "8+", "12+", "15+", "20+"], {
     errorMap: () => ({ message: "Please select a quantity." }),
   }),
 });
@@ -208,9 +208,12 @@ export function QuoteForm() {
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
-                          <SelectItem value="3">3</SelectItem>
-                          <SelectItem value="5-10">5-10</SelectItem>
-                          <SelectItem value="11-15+">11-15+</SelectItem>
+                          <SelectItem value="3+">3+</SelectItem>
+                          <SelectItem value="6+">6+</SelectItem>
+                          <SelectItem value="8+">8+</SelectItem>
+                          <SelectItem value="12+">12+</SelectItem>
+                          <SelectItem value="15+">15+</SelectItem>
+                          <SelectItem value="20+">20+</SelectItem>
                         </SelectContent>
                       </Select>
                       <FormMessage />

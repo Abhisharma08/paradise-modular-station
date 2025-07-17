@@ -24,7 +24,7 @@ const HubspotUpsertInputSchema = z.object({
     "Conference Room Furniture", 
     "Reception Area Furniture"
     ]).optional().describe('The contact\'s furniture requirement.'),
-  quantity: z.enum(["3", "5-10", "11-15+"]).optional().describe('The required quantity.'),
+  quantity: z.enum(["3+", "6+", "8+", "12+", "15+", "20+"]).optional().describe('The required quantity.'),
 });
 export type HubspotUpsertInput = z.infer<typeof HubspotUpsertInputSchema>;
 
