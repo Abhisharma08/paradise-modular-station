@@ -7,25 +7,25 @@ const galleryItems = [
   {
     title: "Modular Workstations",
     description: "Smart, scalable workspaces from 2-person pods to 6-seat clusters. Optional magnetic partitions, glass screens, and planters blend style with function.",
-    image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752738612/freepik__photorealistic-image-of-a-modern-modular-office-wo__60330_1_t1anho.jpg",
+    image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752742222/image-03_p3u9ou.jpg",
     hint: "modular workstation",
   },
   {
     title: "Premium Office Chairs",
     description: "Work in comfort and style. Executive and task chairs like APEX, EERON, and LUMI deliver support, durability, and sleek design.",
-    image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752738599/freepik__zoomedin-photorealistic-image-of-a-premium-ergonom__60332_1_ubxrsv.jpg",
+    image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752742222/image-01_gw93hr.jpg",
     hint: "premium office chair",
   },
   {
     title: "Conference Room Furniture",
     description: "Furniture that inspires decisions. Stylish tables and seating for boardrooms, huddle spaces, and client meetings.",
-    image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752738622/freepik__photorealistic-image-of-a-modern-conference-room-f__60333_1_wsn4xs.jpg",
+    image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752742222/image-04_k26kgm.jpg",
     hint: "conference room",
   },
   {
     title: "Reception Area Furniture",
     description: "Create a standout first impression with modern reception desks and lounge seating for high-traffic spaces.",
-    image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752738601/freepik__photorealistic-image-of-a-modern-office-reception-__60334_1_q7mxdj.jpg",
+    image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752742222/image-02_tziclx.jpg",
     hint: "reception area",
   },
 ];
