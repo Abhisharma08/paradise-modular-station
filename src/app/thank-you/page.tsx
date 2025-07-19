@@ -37,7 +37,7 @@ function ThankYouContent() {
         dangerouslySetInnerHTML={{
           __html: `
             gtag('event', 'conversion', {
-                'send_to': 'AW-17188479495/UFulCNPTqNgaEIfEjYRA',
+                'send_to': 'GTM-MB4NDVM6/UFulCNPTqNgaEIfEjYRA',
                 'value': 1.0,
                 'currency': 'INR'
             });
