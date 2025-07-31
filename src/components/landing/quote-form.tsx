@@ -18,7 +18,9 @@ import { useToast } from "@/hooks/use-toast";
 const stepOneSchema = z.object({
   fullName: z.string().min(2, "Please enter a valid name."),
   email: z.string().email("Please enter a valid email address."),
-  phoneNumber: z.string().min(10, "Please enter a valid phone number."),
+  phoneNumber: z
+    .string()
+    .regex(/^[0-9]{10}$/, "Please enter a valid 10-digit phone number."),
 });
 
 const stepTwoSchema = z.object({
