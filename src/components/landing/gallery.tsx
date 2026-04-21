@@ -36,11 +36,11 @@ const galleryItems = [
     hint: "ergonomic chair",
   },
   {
-    title: "Storage & Partition Systems",
+    title: "Office Storage",
     description:
       "Integrated storage and smart partition solutions that keep your workspace organised while maintaining a clean and modern aesthetic.",
     image:
-      "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1776769098/Storage_Partition_Systems_500_500px_myxfgs.png",
+      "https://res.cloudinary.com/dw9v7jjrq/image/upload/v1776769854/Storage_500_500px_tk8qge.png",
     hint: "office storage",
   },
 ];
