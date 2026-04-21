@@ -6,7 +6,7 @@ export function Hero() {
     <section className="relative w-full overflow-hidden bg-background">
       <div className="absolute inset-0 bg-black/60 z-10" />
       <Image
-        src="https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752739364/Untitled-design-3-1_m6mvuo.webp"
+        src="https://res.cloudinary.com/dw9v7jjrq/image/upload/v1776769097/Hero_section_1600x800px_npb77n.jpg"
         alt="Office furniture"
         fill
         className="object-cover"
@@ -16,10 +16,10 @@ export function Hero() {
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           <div className="space-y-6 text-center lg:text-left">
             <h1 className="font-headline text-5xl font-bold tracking-tight text-primary-foreground sm:text-6xl md:text-7xl">
-              <span className="text-accent">Upgrade Your Workspace</span> with Urban Grey Furniture
+              <span className="text-accent">Upgrade Your Workspace</span> with Paradise Furniture Workstations
             </h1>
             <p className="max-w-xl text-lg text-white lg:mx-0 mx-auto md:text-xl">
-              Transform your workspace with stylish, functional furniture designed to boost productivity, collaboration, and comfort. Perfect for growing businesses and design-driven teams. Explore our curated collection today!
+              Transform your office with intelligently designed workstations that combine efficiency, aesthetics, and flexibility. Built for modern teams, our workstations enhance productivity while creating a cohesive and inspiring workspace.
             </p>
           </div>
           <div>

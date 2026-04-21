@@ -23,7 +23,7 @@ export function Header() {
           <Link href="/" className="flex items-center gap-2">
             <Logo className="h-12 w-auto" />
             <span className="sr-only">
-              Urbangrey
+              Paradise Furniture
             </span>
           </Link>
         </div>
@@ -41,7 +41,7 @@ export function Header() {
             <Link href="/" className="flex items-center gap-2">
                 <Logo className="h-12 w-auto" />
                 <span className="sr-only">
-                Urbangrey
+                Paradise Furniture
                 </span>
             </Link>
         </div>
