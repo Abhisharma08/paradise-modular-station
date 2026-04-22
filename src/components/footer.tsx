@@ -11,7 +11,7 @@ export function Footer() {
             <span className="sr-only">Urbangrey</span>
           </Link>
           <p className="text-sm text-foreground/60">
-            &copy; 2025 Paradise, Inc. All rights reserved.
+            &copy; 2025 Paradise Furniture, Inc. All rights reserved.
           </p>
         </div>
       </div>
