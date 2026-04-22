@@ -1,13 +1,12 @@
 'use server';
 /**
- * @fileOverview A flow for creating or updating a HubSpot contact.
+ * @fileOverview Functions for creating or updating a HubSpot contact.
  *
  * - hubspotUpsert - Creates or updates a contact in HubSpot based on email address.
  * - HubspotUpsertInput - The input type for the hubspotUpsert function.
  * - HubspotUpsertOutput - The return type for the hubspotUpsert function.
  */
 
-import { ai } from '@/ai/genkit';
 import { z } from 'zod';
 
 const HUBSPOT_API_BASE_URL = 'https://api.hubapi.com/crm/v3/objects/contacts';
@@ -106,7 +105,7 @@ function buildProperties(input: HubspotUpsertInput) {
 
   if (input.requirement) {
     properties.lifecyclestage = 'lead';
-    properties['what_is_your_requirement_'] = input.requirement;
+    properties['what_is_your_requirement'] = input.requirement;
   }
 
   if (input.quantity) properties['quantity_required'] = input.quantity;
@@ -114,28 +113,24 @@ function buildProperties(input: HubspotUpsertInput) {
   return properties;
 }
 
-// ---- Public flow ----
+// ---- Public function ----
 
-export const hubspotUpsert = ai.defineFlow(
-  {
-    name: 'hubspotUpsert',
-    inputSchema: HubspotUpsertInputSchema,
-    outputSchema: HubspotUpsertOutputSchema,
-  },
-  async (input): Promise<HubspotUpsertOutput> => {
-    const properties = buildProperties(input);
+export async function hubspotUpsert(input: HubspotUpsertInput): Promise<HubspotUpsertOutput> {
+  // Validate input
+  const validatedInput = HubspotUpsertInputSchema.parse(input);
+  
+  const properties = buildProperties(validatedInput);
 
-    // 1) Try to find an existing contact by email
-    let existingContactId = await searchContactIdByEmail(input.email);
+  // 1) Try to find an existing contact by email
+  let existingContactId = await searchContactIdByEmail(validatedInput.email);
 
-    // 2) Update or create
-    if (existingContactId) {
-      const url = `${HUBSPOT_API_BASE_URL}/${existingContactId}`;
-      const resp = await callHubspotAPI<{ id: string }>(url, 'PATCH', { properties });
-      return { id: resp.id, isNew: false };
-    } else {
-      const resp = await callHubspotAPI<{ id: string }>(HUBSPOT_API_BASE_URL, 'POST', { properties });
-      return { id: resp.id, isNew: true };
-    }
+  // 2) Update or create
+  if (existingContactId) {
+    const url = `${HUBSPOT_API_BASE_URL}/${existingContactId}`;
+    const resp = await callHubspotAPI<{ id: string }>(url, 'PATCH', { properties });
+    return { id: resp.id, isNew: false };
+  } else {
+    const resp = await callHubspotAPI<{ id: string }>(HUBSPOT_API_BASE_URL, 'POST', { properties });
+    return { id: resp.id, isNew: true };
   }
-);
+}
