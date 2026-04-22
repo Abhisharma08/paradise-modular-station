@@ -7,8 +7,8 @@ import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Modern Office Furniture Solutions',
-  description: 'Discover premium furniture for offices and commercial spaces with Urban Grey. From desks to seating, elevate your workspace today.',
-  keywords: 'workspace design, urban grey furniture, office solutions, commercial furniture, workspace solutions',
+  description: 'Discover premium furniture for offices and commercial spaces with Paradise Furniture. From desks to seating, elevate your workspace today.',
+  keywords: 'workspace design, office solutions, commercial furniture, workspace solutions',
 };
 
 export default function RootLayout({
