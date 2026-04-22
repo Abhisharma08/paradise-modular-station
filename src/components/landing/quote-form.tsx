@@ -133,7 +133,7 @@ export function QuoteForm() {
                     <FormItem>
                       <FormLabel>Email</FormLabel>
                       <FormControl>
-                        <Input placeholder="e.g. example@domain.com" {...field} />
+                        <Input placeholder="Your Email" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -146,7 +146,7 @@ export function QuoteForm() {
                     <FormItem>
                       <FormLabel>Phone Number</FormLabel>
                       <FormControl>
-                        <Input placeholder="e.g. 1234567890" {...field} />
+                        <Input placeholder="e.g. 9874563210" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
